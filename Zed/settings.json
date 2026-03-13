@@ -1,0 +1,210 @@
+{
+  "buffer_line_height": "standard",
+  "agent": {
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "ui_font_size": 15,
+  "ui_font_family": "IBM Plex Sans",
+
+  "buffer_font_family": "Adwaita Mono",
+  "buffer_font_size": 15.0,
+  "buffer_font_weight": 100.0,
+
+  "soft_wrap": "editor_width",
+  "show_whitespaces": "selection",
+
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+  },
+
+  "edit_predictions": {
+    "enabled_in_text_threads": true,
+    "provider": "zed",
+  },
+
+  "show_edit_predictions": false,
+
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 100,
+    },
+  },
+
+  "hover_popover_delay": 100,
+
+  "scrollbar": {
+    "show": "auto",
+    "diagnostics": "error",
+  },
+
+  "gutter": {
+    "line_numbers": true,
+    "runnables": false,
+    "folds": true,
+  },
+
+  "search": {
+    "button": false,
+    "case_sensitive": true,
+  },
+
+  "diagnostics": {
+    "button": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+    },
+    "include_warnings": false,
+  },
+
+  "project_panel": {
+    "diagnostic_badges": true,
+    "show_diagnostics": "errors",
+    "bold_folder_labels": true,
+    "hide_gitignore": false,
+    "auto_reveal_entries": true,
+    "default_width": 200,
+  },
+
+  "title_bar": {
+    "show_menus": false,
+    "show_user_picture": true,
+    "show_user_menu": true,
+    "show_branch_name": true,
+    "show_branch_icon": true,
+  },
+
+  "terminal": {
+    "default_width": 500,
+    "default_height": 230,
+    "cursor_shape": "bar",
+    "blinking": "on",
+    "font_family": "FantasqueSansM Nerd Font",
+    "font_size": 15.0,
+    "copy_on_select": true,
+    "shell": {
+      "program": "zsh",
+    },
+  },
+
+  "minimap": {
+    "display_in": "active_editor",
+    "show": "never",
+  },
+
+  "status_bar": {
+    "active_encoding_button": "disabled",
+    "cursor_position_button": false,
+    "active_language_button": true,
+  },
+
+  "toolbar": {
+    "code_actions": false,
+    "agent_review": true,
+  },
+
+  "outline_panel": {
+    "default_width": 250,
+    "button": true,
+  },
+
+  "collaboration_panel": {
+    "button": false,
+  },
+
+  "notification_panel": {
+    "button": false,
+  },
+
+  "debugger": {
+    "button": false,
+  },
+
+  "git_panel": {
+    "default_width": 300.0,
+    "status_style": "icon",
+  },
+
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/node_modules",
+    "**/vendor",
+    "**/.DS_Store",
+  ],
+
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme",
+  },
+
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "macOS Classic Dark",
+  },
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  "languages": {
+    "JavaScript": {
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+      },
+    },
+
+    "TypeScript": {
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+      },
+    },
+
+    "CSS": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+      },
+    },
+
+    "HTML": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+      },
+    },
+
+    "Python": {
+      "tab_size": 4,
+      "formatter": {
+        "external": {
+          "command": "black",
+          "arguments": ["-"],
+        },
+      },
+    },
+  },
+
+  "format_on_save": "on",
+}
